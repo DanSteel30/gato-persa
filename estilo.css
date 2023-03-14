@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+     size: 62.5%;
+    font-size: 62.5%;
+}
+body {
+    background-color: rgb(201, 240, 175);    
+}
+
+.container {
+    /* display: inline-block; ESTO ME ENVIA AL BORDE A LA DERECHA*/
+    margin: 20px 50px;
+    width: 70%;
+    height: 500px;
+    display: inline-block;
+}
+.center-box img{
+    /*background-color: red;*/
+    width: 250px;
+    min-height: 200px;
+    position: sticky; /*Esta posición pega en el display, y no se mueve cuando agranda la pantalla*/
+    top: 50px;
+    left: calc(50% - 100px);/* UBICAR CENTRADO: Calculé encontrando la mitad de la distancia horizontal del container(50%) y a eso se le resta la mitad del tamaño del objeto(width100px/2=50px)*/
+    font-size: 1.2rem;
+}
+
+.image img {
+    /*background-color: rgb(39, 168, 67); prueba para ubicar imagen*/
+    width: 120px;
+    position: fixed;
+    top: 65px;
+    left: calc(50% - 50px);
+    
+}
+.bottom-box-msj img {
+    /*background-color: red;*/
+    width: 250px;
+    min-height: 300px;
+    position: sticky; /*Esta posición pega en el display, y no se mueve cuando agranda la pantalla*/
+    top: 100px;
+    left: calc(50% - 100px);/* UBICAR CENTRADO: Calculé encontrando la mitad de la distancia horizontal del container(50%) y a eso se le resta la mitad del tamaño del objeto(width100px/2=50px)*/
+    
+} 
+
+.bottom-box-msj p {
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px 0.1px 10px;
+    background-color: rgba(110, 184, 0, 0.5);
+    box-shadow: 8px 2px 20px 8px;
+    width: 200px;
+    min-height: 200px;
+    padding: 3px;
+    position: fixed;
+    top: 250px;
+    left: calc(50% - 80px);
+}
+
+
+.title {
+    
+    background-color: rgba(16, 99, 110, 95%);
+    border-radius: 8px;
+    box-shadow: 10px 8px 10px 12px black;
+    width: 145px;
+    height: 50px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style:italic;
+    color: rgba(214, 186, 152, 0.966);
+    text-shadow: 5px 5px 2px black;
+    padding: 10px;
+    position: fixed;
+    top: 2px;
+    left: calc(50% - 50px)
+}
+
+.box-features {
+    background-color: rgba(39, 168, 129,90%);
+    box-shadow: -8px 5px 20px 10px;
+    width: 80px;
+    min-height: 120px;
+    text-align: center, justify;
+    padding-top:11px;
+    padding-left: 5px;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    top: 100px;
+    left: calc(50% - 150px)
+}
+
+.box-adds {
+    background-color: rgba(240, 236, 0, 0.92);
+    border-radius: 8px;
+    box-shadow: 8px 2px 20px 10px;
+    font-size: 1.2rem;
+    text-align: center, justify;
+    padding-left: 3px;
+    padding-top: 3px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 60px;
+    min-height: 120px;
+    position: fixed;
+    top: 100px;
+    right: calc(50% - 165px)
+}
